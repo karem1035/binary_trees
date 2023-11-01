@@ -4,10 +4,10 @@
  * @tree: the tree pointer.
  * @func: the function to be used on each node.
  * Return: void.
-*/
+ */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL)
+	if (tree == NULL || !func)
 		return;
 	func(tree->n);
 	binary_tree_preorder(tree->left, func);

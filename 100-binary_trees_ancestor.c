@@ -13,6 +13,9 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	if (!first || !second)
 		return (NULL);
 
+	if (first == second)
+		return ((binary_tree_t *)first);
+
 	while (first)
 	{
 		currnet = second->parent;

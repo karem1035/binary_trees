@@ -29,7 +29,11 @@ int binary_tree_is_full(const binary_tree_t *tree)
 
 	return (0);
 }
-
+/**
+ * binary_tree_is_perfect - checks if the tree is perfect or not.
+ * @tree: the tree to be checked.
+ * Return: 1 if perfect tree, otherwise 0.
+ */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int l_size, r_size, full;
